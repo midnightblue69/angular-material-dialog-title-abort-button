@@ -1,0 +1,33 @@
+@use '@angular/material' as mat;
+
+@import '../../theme-variables.scss';
+
+.dialog {
+    width: 400px;
+
+    .title {
+        background-color: $primary-color; 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .title-text {
+            color: $primary-contrast-color;
+            margin-left: 25px;
+        }
+        .close-button {
+            text-decoration: none;
+            display: flex;
+            align-items: center;
+            font-size: 32px;
+            margin-right: 25px;
+            color: $primary-contrast-color;
+        }    
+    }
+
+    .mat-mdc-dialog-actions button {
+        margin-right: 15px;
+        margin-bottom: 15px;
+        width: 80px;
+    }
+}
